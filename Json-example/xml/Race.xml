@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Race xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <Competitors>
+    <Human>
+      <Firstname>Petr</Firstname>
+      <Lastname>Lukavec</Lastname>
+      <Nationality>CZE</Nationality>
+      <Birth>1978</Birth>
+    </Human>
+    <Human>
+      <Firstname>Brian</Firstname>
+      <Lastname>lund</Lastname>
+      <Birth>1982</Birth>
+    </Human>
+  </Competitors>
+  <Start>2023-05-12T13:09:28.5202555+02:00</Start>
+</Race>
