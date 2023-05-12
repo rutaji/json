@@ -59,6 +59,13 @@ public class Jsonexample
         int[] desArray = JsonSerializer.Deserialize<int[]>(jsonString);
         Print(desArray);
 
+        //serializuji dictionary
+        Dictionary<int,string> dic = new Dictionary<int, string>{ {1,"jedna" },{2,"dva" } };
+        jsonString = JsonSerializer.Serialize(dic);
+        File.WriteAllText(path + "json\\Dictionary.json", jsonString);
+        Dictionary<int, string> desdic = JsonSerializer.Deserialize<Dictionary<int, string>>(jsonString);
+        Print(desdic);
+
         //serializuji objekt
         Human Petr = new("Petr", "Lukavec", "CZE", 1978);
         jsonString = JsonSerializer.Serialize(Petr);
@@ -95,6 +102,7 @@ public class Jsonexample
 
             serializerAr.Serialize(writer, Array);
         }
+        //XmlSerializer neumí serializovat hash table
         //zapíšu do souboru
         using (var reader = new StreamReader(path + "xml\\Array.xml"))
         {
